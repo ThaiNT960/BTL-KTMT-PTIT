@@ -48,6 +48,9 @@ Các bài đã thực hiện: **1, 2, 4, 5, 6, 7, 8, 10, 11, 12, 13, 16**.
 
 ###  Balloon Shooting Game
 
+**Balloon Shooting Game** là trò chơi bắn bóng bay viết bằng **Assembly 8086**.  
+Người chơi điều khiển nhân vật bắn mũi tên tiêu diệt bóng bay, **thắng** khi đạt số điểm mục tiêu và **thua** nếu để lọt quá nhiều bóng.  
+
 ####  Mục tiêu
 - Bắn trúng các bóng bay di chuyển từ dưới lên bên phải màn hình.  
 

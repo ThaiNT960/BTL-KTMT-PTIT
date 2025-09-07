@@ -1,0 +1,152 @@
+\documentclass[12pt,a4paper,openany,oneside]{report}
+\usepackage[utf8]{vietnam}
+\usepackage{amsmath, amsthm, amssymb,amsxtra,latexsym,amscd,graphpap,makeidx}
+\usepackage{pgf,tikz}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\usepackage{float}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{graphicx}
+\usepackage{array,tabularx,longtable,multicol,indentfirst,fancyhdr}
+\usepackage[mathscr]{eucal}
+\usepackage[top=3.5cm, bottom=3.0cm, left=3.5cm, right=2cm]{geometry}
+\usepackage{fancybox}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage[strings]{underscore}
+
+
+
+\renewcommand{\chaptername}{Chương}
+\renewcommand\bibname{Tài liệu tham khảo}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\nouppercase{\leftmark}} 
+\fancyhead[R]{\thepage} 
+\fancyfoot[C]{} 
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt} 
+
+\begin{document}
+
+\newgeometry{top=2.0cm,bottom=3.0cm,left=3.0cm,right=2.8cm}
+\setlength{\fboxrule}{1.5pt}
+\thisfancypage{\setlength{\fboxsep}{10pt}\setlength{\shadowsize}{0pt}\doublebox}{}
+
+\begin{titlepage}
+\fontsize{14pt}{14pt}\selectfont \baselineskip 0.65cm
+\thispagestyle{empty}
+\begin{center}
+{HỌC VIỆN CÔNG NGHỆ BƯU CHÍNH VIỄN THÔNG}\\
+\textbf{\MakeUppercase{KHOA CÔNG NGHỆ THÔNG TIN I}}\\
+\centerline{--------------------o0o--------------------}  
+\end{center}
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=6cm]{logo.png}
+	\end{center}
+\end{figure} 
+ 
+\vspace{0.5cm}
+\begin{center}
+\textbf{\MakeUppercase{\LARGE \bf BÁO CÁO BÀI TẬP LỚN}}\\ 
+\end{center} 
+
+
+
+\vspace{0.1cm}
+\begin{center}
+	\textbf{Môn: Kiến trúc máy tính}\\[0.5cm]
+	\textbf{Chủ đề: Lập trình hợp ngữ Assembly và phân tích }\\[0.01cm]
+    \textbf{hệ thống bộ nhớ}\\[0.5cm]
+	\textbf{Giảng viên: Trần Tiến Công}
+\end{center}
+
+\vspace{1cm}
+\hspace{3cm}
+\begin{tabular}{ll}
+    Nguyễn Trường Thái & B23DCCN747 \\
+	Hà Duy Khánh & B23DCCN426 \\
+	Vũ Quang Huy & B23DCCN412 \\
+	Lê Huy Hải & B23DCCN272 \\
+\end{tabular}
+
+\vfill
+\begin{center}
+{{\bf Hà Nội, 5/2025}}
+\end{center}
+\end{titlepage}
+
+
+\restoregeometry
+\pagestyle{fancy}
+\pagenumbering{roman}
+\fontsize{13pt}{13pt}\selectfont \baselineskip 0.75cm 
+
+\newpage
+\thispagestyle{empty}
+\tableofcontents
+
+
+\newpage 
+\addcontentsline{toc}{chapter}{\bf  Danh sách hình vẽ} 
+
+\listoffigures
+
+
+\newpage
+\thispagestyle{plain}
+\begin{center}
+	{\LARGE
+		{\bf Danh sách các ký hiệu và chữ viết tắt}}
+\end{center}
+\addcontentsline{toc}{chapter}{Danh sách các ký hiệu và chữ viết tắt}
+\vspace{1.25cm}
+{\fontsize{13}{13}\selectfont
+	\begin{tabular}{ll}
+		CPU & Central Processing Unit (Đơn vị xử lý trung tâm)\\
+		RAM & Random Access Memory (Bộ nhớ truy cập ngẫu nhiên)\\
+		ROM & Read-Only Memory (Bộ nhớ chỉ đọc)\\
+		IP & Instruction Pointer (Con trỏ lệnh)\\
+		DS & Data Segment (Đoạn dữ liệu)\\
+		SS & Stack Segment (Đoạn ngăn xếp)\\
+		CS & Code Segment (Đoạn mã)\\
+		BP & Base Pointer (Con trỏ cơ sở)\\
+		SP & Stack Pointer (Con trỏ ngăn xếp)\\
+		SI & Source Index (Chỉ mục nguồn)\\
+		HĐH & Hệ điều hành\\
+	\end{tabular}
+}
+
+\newpage
+\pagenumbering{arabic} 
+\pagestyle{fancy} 
+
+\input{chapters/introduction}
+\input{chapters/chapter1}
+\input{chapters/chapter2}
+
+
+
+
+
+\chapter*{Kết luận}
+\addcontentsline{toc}{chapter}{Kết luận} 
+\markboth{Kết luận}{}
+
+Qua quá trình thực hiện các bài tập lập trình hợp ngữ Assembly và phân tích khảo sát hệ thống bộ nhớ, chúng tôi đã đạt được những kết quả và kiến thức quan trọng sau:
+
+Về lập trình hợp ngữ Assembly, chúng tôi đã thực hiện thành công nhiều bài tập đa dạng như chuyển đổi ký tự thường thành hoa, chuyển đổi giữa các hệ cơ số, tính toán số học, và xử lý chuỗi. Qua đó, chúng tôi đã hiểu sâu hơn về cách thức hoạt động của các lệnh Assembly, cách tổ chức và quản lý dữ liệu, cũng như các kỹ thuật lập trình cấp thấp.
+
+Về phân tích khảo sát hệ thống bộ nhớ, chúng tôi đã tìm hiểu và phân tích cấu hình máy tính, bao gồm CPU, cache, RAM, và các thiết bị lưu trữ. Đồng thời, chúng tôi cũng đã khảo sát và giải thích nội dung các thanh ghi như IP, DS, ES, SS, CS, BP, SP, từ đó hiểu rõ hơn về cơ chế quản lý bộ nhớ của hệ thống. Việc này giúp chúng tôi nắm vững kiến thức về kiến trúc máy tính và cách thức hoạt động của bộ nhớ.
+
+Những kiến thức và kỹ năng thu được từ đồ án này không chỉ giúp chúng tôi hiểu sâu hơn về lập trình cấp thấp và kiến trúc máy tính, mà còn là nền tảng quan trọng cho việc học tập và nghiên cứu các môn học khác trong lĩnh vực khoa học máy tính. Đặc biệt, việc hiểu rõ về cách thức hoạt động của máy tính ở mức thấp sẽ giúp chúng tôi phát triển phần mềm hiệu quả và tối ưu hơn trong tương lai.
+
+Tuy nhiên, chúng tôi cũng nhận thấy rằng còn nhiều vấn đề phức tạp và sâu sắc hơn trong lĩnh vực lập trình Assembly và kiến trúc máy tính cần được tiếp tục nghiên cứu và tìm hiểu. Trong tương lai, chúng tôi hy vọng sẽ có cơ hội để mở rộng kiến thức và kỹ năng trong lĩnh vực này, đặc biệt là trong các ứng dụng thực tế như tối ưu hóa hiệu suất, phát triển hệ thống nhúng, và bảo mật hệ thống.
+
+\end{document}

@@ -88,7 +88,7 @@ Người chơi điều khiển nhân vật bắn mũi tên tiêu diệt bóng ba
 -  **CPU-Z** (phân tích cấu hình máy)  
 
 ## 🔗 Tham khảo
-Code được tham khảo và sửa lại dựa trên phiên bản mã nguồn mở.<br>
+Code được tham khảo và sửa đổi dựa trên phiên bản mã nguồn mở.<br>
 Tham khảo mã nguồn gốc tại đây: 
 [**Assembly- Balloon Shooting Game**](https://github.com/Rezve/8086-Microprocessor-Game-in-Assembly-Language) 
 
